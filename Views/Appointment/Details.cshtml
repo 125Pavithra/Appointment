@@ -1,0 +1,48 @@
+﻿@model InsertAppointment.AppointmentTBL
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+<div>
+    <h4>Appointment Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AppointmentTypeId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AppointmentTypeId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerId)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StatusCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StatusCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumerName)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConsumerName)
+        </dd>
+    </dl>
+    @using (Html.BeginForm())
+    {
+        <div class="form-actions no-color">
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
